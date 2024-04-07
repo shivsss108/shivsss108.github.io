@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiView Tech</title>
+    <script>
+        function handleUpload() {
+            var fileInput = document.getElementById('fileInput');
+            if (fileInput.files.length > 0) {
+                window.location.href = 'success.html';
+            } else {
+                alert('Por favor, selecione um arquivo para fazer o upload.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="file" id="fileInput" name="arquivos" class="btn btn-success" accept="image/png, image/jpeg" multiple />
+    <button onclick="handleUpload()">Upload</button>
+</body>
+</html>
